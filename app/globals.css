@@ -53,23 +53,30 @@
 
   .nav-list-mobile > ul {
     @apply grid place-content-center 
-  w-full h-full;
+    w-full h-full;
   }
 
   .nav-list-mobile > ul > li {
     @apply text-base
-  font-semibold
-text-theme-primary 
-  my-2;
+    font-semibold
+  text-theme-primary 
+    font-moderat
+    my-2;
+    @apply md:text-4xl md:font-normal md:my-5
   }
 
   .x-menu-cover {
     @apply w-[25px]
     h-[25px]
     absolute
-    top-0
-    right-0
+    top-3
+    right-3
     m-4;
+    @apply
+    md:top-5
+    md:right-5
+    md:w-[40px]
+    md:h-[40px]
   }
 
   .x-menu {
@@ -175,7 +182,7 @@ text-theme-primary
   }
 
   .news-section {
-    
+    @apply py-5 px-5 overflow-hidden
   }
 
   .news-section > h1 {
@@ -229,7 +236,7 @@ text-theme-primary
   }
 
   .card-scroll {
-    @apply relative md:w-[100%] md:flex 
+    @apply relative md:flex 
     md:overflow-hidden md:w-[65rem];
   }
 
