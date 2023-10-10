@@ -6,11 +6,46 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'xm': '280px',
+      // => @media (min-width: 280px) { ... }
+      // 'sm': '640px',
+      'sm': '412px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+    fontFamily: {
+      moderat: ['Moderat', 'sans-serif'],
+      mooli: ['Mooli', 'sans-serif']
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'theme': {
+          neutral: '#ffffff',
+          primary: '#0096C7',
+          10: '#CCEAF4',
+          20: '#AADCEC',
+          30: '#80CAE3',
+          40: '#55B9DA',
+          50: '#2BA7D0',
+          60: '#007DA6',
+          70: '#006485',
+          80: '#004B64',
+          90: '#003242',
+
+        },
+      
       },
     },
   },
