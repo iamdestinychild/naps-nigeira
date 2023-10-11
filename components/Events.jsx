@@ -4,8 +4,10 @@ import Eventcard from "./Eventcard";
 function Events() {
   return (
     <div className="events-component">
-      <h1>Event</h1>
-      <span className="section-line"></span>
+      <div className="event-component-heading">
+        <h1>Event</h1>
+        <span className="section-line"></span>
+      </div>
       <div className="events-container">
         <Eventcard
           image="/assets/images/event1.jpg"

@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Moderat";
-  /* src: url('/assets/fonts/moderat/Moderat-Light.woff');  */
+  src: url('/assets/fonts/moderat/Moderat-Light.woff'); 
   font-weight: normal;
 }
 
@@ -17,7 +17,7 @@
     justify-between px-[18px]
     py-[10px] z-50 bg-theme-90
     /* md:763 starts */
-    md:px-10
+    md:px-10 lg:px-[65px]
     /* ends */;
   }
 
@@ -26,6 +26,7 @@
     w-[50px] h-[50px]
     /* md:763 starts */
     md:w-[75px] md:h-[75px]
+    xl:w-[65px] xl:h-[65px]
     /* ends */;
   }
 
@@ -35,12 +36,15 @@
 
   .nav-list {
     @apply flex text-center 
-      justify-between flex-wrap 
-      self-center w-[60%] xm:hidden;
+      justify-evenly flex-wrap 
+      self-center w-[60%] xm:hidden 
+      lg:flex lg:flex-row lg:w-[45%]
   }
 
   .nav-list > li {
-    @apply text-[14px] text-theme-neutral font-semibold;
+    @apply text-[14px] text-theme-neutral
+    font-semibold hover:bg-theme-primary
+    px-8 py-3 rounded-xl
   }
 
   .nav-list-mobile {
@@ -90,6 +94,7 @@
     m-4
     /* md:763 starts */
     md:w-[40px] md:h-[40px]
+    lg:hidden
     /* ends */;
   }
 
@@ -102,34 +107,50 @@
     h-[55vh] w-full bg-no-repeat 
     bg-cover bg-center relative
     /* sm:412px fix starts */
-    sm:h-[44vh]
+    sm:h-[44vh] lg:h-[80vh]
     /* ends */;
   }
 
   .hero-cover {
-    @apply absolute w-[100%] h-[100%] bg-theme-90 opacity-[0.8];
+    @apply absolute w-[100%] h-[100%] top-0 left-0 bg-theme-90 opacity-[0.8];
   }
 
   .hero-content {
-    @apply absolute w-full
-    h-full z-30
-    py-48 px-4
+    @apply 
+    /* absolute  */
+    w-[100%]
+    h-[100%] 
+    z-30
+    py-64
+    px-4
     /* sm:412px fix starts */
-    sm:px-5 sm:py-56
+    /* sm:px-5 sm:py-56 */
     /* ends */
     /* md:763 starts */
-    md:px-20
+    /* md:px-20 
+    lg:py-80 
+    xl:py-[24rem] */
+    /* xl:px-32 */
+     /* bg-red-500 opacity-[0.45] */
     /* ends */;
   }
 
-  .hero-content > p {
+  .hero-title-p{
+    @apply 
+    absolute xl:bottom-36 xl:left-10
+    /* px-10 */
+    /* bg-red-500 opacity-[0.45] */
+  }
+
+  .hero-title-p > p {
     @apply text-sm text-theme-neutral
      mt-3 font-normal
      font-moderat
      /* sm:412px fix starts */
      sm:text-lg sm:pr-2
      /* ends */
-     md:text-2xl md:mt-5;
+     md:text-2xl md:mt-5
+     xl:text-xl
   }
 
   .hero-title {
@@ -144,7 +165,7 @@
   .hero-title > h1 {
     @apply text-lg font-bold
     text-theme-neutral
-    text-left pl-2 font-mooli
+    text-left pl-2 xl:pr-10 font-mooli
     sm:text-2xl md:text-4xl;
   }
 
@@ -153,16 +174,19 @@
     /* sm:412px fix starts */
     leading-4
     /* ends */
-    md:px-10;
+    md:px-10
+    xl:py-[5rem]
+    xl:px-[12rem]
   }
 
   .about-section > h1 {
     @apply text-2xl font-bold
-     text-theme-90 pb-3
+     text-theme-90 mb-3
      font-mooli
      /* sm:412 starts */
      sm:text-3xl
-     /* ends */;
+     /* ends */
+     xl:mb-5
   }
 
   .about-section > article {
@@ -182,13 +206,17 @@
   }
 
   .news-section {
-    @apply py-5 px-5 overflow-hidden
+    @apply 
+    py-5
+    /* px-3 */
+    overflow-hidden
+    /* xl:px-10 */
   }
 
-  .news-section > h1 {
-    @apply text-3xl font-bold
+ .news-section-heading > h1 {
+    @apply text-2xl md:text-3xl font-bold
     text-theme-90 font-mooli
-    mb-3 px-5
+    mb-3 px-0
     /* sm:412 starts */
      sm:px-0
     /* ends */;
@@ -197,15 +225,20 @@
   .section-line {
     @apply w-full h-[1px]
     bg-slate-500 inline-block
-    mb-5 px-5
+    mb-5
     /* sm:412 starts */
     sm:px-0    
     /* ends */;
   }
 
+  .news-section-heading{
+    @apply xl:px-[12rem]
+  }
+
   .newscard {
-    @apply relative p-3 m-5 
-    border-[1px] border-theme-10;
+    @apply relative p-3 my-5 md:m-5 
+    border-[1px] border-theme-10
+    xl:w-1/3
     /* fix width bug later */
   }
 
@@ -237,30 +270,38 @@
 
   .card-scroll {
     @apply relative md:flex 
-    md:overflow-hidden md:w-[65rem];
+    md:overflow-hidden md:w-[65rem]
+    xl:mx-auto
+    xl:my-10
+    /* xl:bg-red-500 */
   }
 
   .events-component {
-    @apply py-5 px-5 overflow-hidden
+    @apply py-5 px-3 md:px-5 overflow-hidden
     /* mx-auto  */;
+  }
+
+  .event-component-heading{
+    @apply xl:px-[12rem]
   }
 
   .events-container {
     @apply md:flex md:flex-row
      md:justify-between
-     md:w-[65rem];
+     md:w-[65rem]
+     xl:mx-auto
   }
 
-  .events-component > h1 {
-    @apply text-3xl font-bold
-    text-theme-80 pb-3
+  .event-component-heading > h1 {
+    @apply text-2xl md:text-3xl font-bold
+    text-theme-80 pb-3 px-0
     font-mooli;
   }
 
   .eventcard {
     @apply flex flex-col
     border-[1px] border-theme-primary 
-    mt-5 mb-10 pb-2 md:mx-3;
+    mt-5 mb-10 pb-2 md:mx-3 xl:w-1/3
   }
 
   .eventcard-image-cover {
@@ -334,7 +375,7 @@
   }
 
   .footer-link > li > a {
-    @apply text-theme-neutral text-lg
+    @apply text-theme-neutral text-[14px]
     font-normal font-moderat md:text-[18px] 
   }
 
@@ -343,7 +384,7 @@
   }
 
   .footer-socials > p {
-    @apply text-lg text-theme-neutral
+    @apply text-sm md:text-lg text-theme-neutral
     font-moderat my-3;
   }
 

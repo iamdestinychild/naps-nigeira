@@ -4,8 +4,10 @@ import Newscard from "./Newscard";
 function News() {
   return (
     <div className="news-section">
-      <h1>Latest News</h1>
-      <span className="section-line"></span>
+      <div className="news-section-heading">
+        <h1>Latest News</h1>
+        <span className="section-line"></span>
+      </div>
 
       <div className="card-scroll">
         <Newscard
