@@ -38,7 +38,7 @@
     @apply flex text-center 
       justify-evenly flex-wrap 
       self-center w-[60%] xm:hidden 
-      lg:flex lg:flex-row lg:w-[45%]
+      lg:flex lg:flex-row lg:w-[65%]
   }
 
   .nav-list > li {
@@ -112,7 +112,10 @@
   }
 
   .hero-cover {
-    @apply absolute w-[100%] h-[100%] top-0 left-0 bg-theme-90 opacity-[0.8];
+    @apply 
+    absolute w-[100%] h-[100%]
+     top-0 left-0 bg-theme-90 
+     opacity-[0.8];
   }
 
   .hero-content {
@@ -122,24 +125,17 @@
     h-[100%] 
     z-30
     py-64
-    px-4
-    /* sm:412px fix starts */
-    /* sm:px-5 sm:py-56 */
-    /* ends */
-    /* md:763 starts */
-    /* md:px-20 
-    lg:py-80 
-    xl:py-[24rem] */
-    /* xl:px-32 */
-     /* bg-red-500 opacity-[0.45] */
-    /* ends */;
+    px-4;
   }
 
   .hero-title-p{
     @apply 
-    absolute xl:bottom-36 xl:left-10
-    /* px-10 */
-    /* bg-red-500 opacity-[0.45] */
+    absolute 
+    xl:bottom-36 xl:left-10
+    lg:left-12
+    bottom-[2rem]
+    lg:px-10
+    /* bg-red-500 */
   }
 
   .hero-title-p > p {
@@ -208,7 +204,7 @@
   .news-section {
     @apply 
     py-5
-    /* px-3 */
+    px-5
     overflow-hidden
     /* xl:px-10 */
   }
@@ -232,7 +228,7 @@
   }
 
   .news-section-heading{
-    @apply xl:px-[12rem]
+    @apply xl:px-[7rem]
   }
 
   .newscard {
@@ -282,14 +278,16 @@
   }
 
   .event-component-heading{
-    @apply xl:px-[12rem]
+    @apply xl:px-[7rem]
   }
 
   .events-container {
-    @apply md:flex md:flex-row
-     md:justify-between
-     md:w-[65rem]
-     xl:mx-auto
+    @apply 
+    md:flex md:flex-row
+    md:justify-between
+    md:w-[65rem]
+    xl:mx-auto
+    px-2
   }
 
   .event-component-heading > h1 {
@@ -306,7 +304,7 @@
 
   .eventcard-image-cover {
     @apply relative 
-    w-[100%] h-44
+    w-[100%] h-48
     /* sm:412 starts */
     sm:h-64
     /* ends */;
@@ -345,7 +343,9 @@
   }
 
   .footer-logo-brife {
-    @apply pb-3 md:w-1/2 md:px-3
+    @apply 
+    pb-3 md:w-1/2 md:px-3
+    xl:w-[0.5/2]
   }
 
   .footer-logo-cover {

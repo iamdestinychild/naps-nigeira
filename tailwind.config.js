@@ -10,7 +10,8 @@ module.exports = {
       'xm': '280px',
       // => @media (min-width: 280px) { ... }
       // 'sm': '640px',
-      'sm': '412px',
+      'sm': '390px',
+      // 'sm': '412px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
