@@ -13,16 +13,6 @@ function Eventcard({ image, title, paragraph }) {
           <a href="#">Read More</a>
         </div>
       </div>
-      <div className="lg-eventcard xm:hidden">
-        <div className="lg-eventcard-image-cover">
-          <Image src={image} alt="" className="lg-eventcard-image" fill />
-        </div>
-        <div className="lg-eventcard-content">
-          <h1>{title}</h1>
-          <article>{paragraph}</article>
-          <a href="#">Read More</a>
-        </div>
-      </div>
     </>
   );
 }

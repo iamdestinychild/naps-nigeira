@@ -1,4 +1,3 @@
-import React from "react";
 import Eventcard from "./Eventcard";
 
 function Events() {
