@@ -28,7 +28,9 @@ module.exports = {
     },
     fontFamily: {
       moderat: ['Moderat', 'sans-serif'],
-      mooli: ['Mooli', 'sans-serif']
+      inter: [ 'Inter', 'sans-serif'],
+      mooli: ['Mooli', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif']
     },
     extend: {
       colors: {

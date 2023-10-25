@@ -1,0 +1,63 @@
+/* web nav start */
+.webNav{
+    @apply bg-theme-90 w-[100vw] flex font-inter items-center justify-between lg:px-20 xl:px-72 px-8  py-[12px]
+}
+
+.webNavLogo{
+    @apply lg:w-16 lg:h-16  w-10 h-10
+}
+
+.webNavLinkContainer{
+    @apply w-[25%] lg:flex justify-between items-center hidden
+}
+
+.webNavLinkContainer > a{
+    @apply text-sm text-theme-neutral
+}
+
+.webNavContact{
+    @apply bg-theme-neutral text-theme-90 font-inter font-medium text-base text-center px-7 py-1 rounded-[5px] hidden lg:inline-block
+}
+
+/* web nav end */
+
+/* Mobile nav start */
+
+.mobileNav{
+    @apply lg:hidden h-screen w-screen fixed top-0 z-50 bg-theme-90 font-inter m-auto px-5
+}
+
+.navBars{
+    @apply text-theme-neutral w-6 h-6  lg:hidden
+}
+
+.logoCancel{
+    @apply flex justify-between items-center py-4
+}
+
+.mobileNavLogo{
+    @apply w-10 h-10
+}
+
+
+.navClose{
+    @apply text-theme-neutral w-6 h-6 
+}
+
+.mobileNavContainer{
+    @apply grid mx-auto py-16 relative
+}
+
+.mobileNavLinkContainer{
+    @apply grid mb-5
+}
+
+.mobileNavLinkContainer > a{
+    @apply text-sm text-theme-neutral my-6 font-inter font-medium border-b-[1px]
+}
+
+.mobileNavContact{
+    @apply bg-theme-neutral text-theme-90 font-medium text-base text-center my-5 w-[100%] py-1 rounded-[15px] 
+}
+
+/* Mobile nav end */
