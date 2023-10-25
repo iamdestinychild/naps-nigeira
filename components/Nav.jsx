@@ -4,8 +4,8 @@ import styles from "../styles/nav.module.css";
 import Image from "next/image";
 // import Link from 'next/link'
 import logo from "../public/assets/images/naps-logo.png";
-import Bars from "@/icons/Bars";
-import Cancel from "@/icons/Cancel";
+import Bars from "../icons/Bars";
+import Cancel from "../icons/Cancel";
 import { useState } from "react";
 
 function Nav() {
