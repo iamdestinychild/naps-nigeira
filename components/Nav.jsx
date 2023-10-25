@@ -1,78 +1,65 @@
-"use client";
+"use client"
 
+import styles from "../styles/nav.module.css";
 import Image from "next/image";
+// import Link from 'next/link'
+import logo from "../public/assets/images/naps-logo.png";
+import Bars from "@/icons/bars";
+import Cancel from "@/icons/cancel";
 import { useState } from "react";
 
 function Nav() {
-  const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setOpen((prevOpen) => !prevOpen);
-  };
+  const [showMenu, setShowMenu] = useState(false)
+
+  const toggleMenu = ()=> {
+    setShowMenu((prevShowMenu) => !prevShowMenu)
+  }
 
   return (
-    <nav className="nav">
-      <div className="logo-cover">
-        <Image
-          src="/assets/images/naps-logo.png"
-          className="nav-image"
-          fill
-          alt=""
-        />
-      </div>
+    <>
+      <div className={styles.webNav}>
+        <Image src={logo} alt="Naps Nigeria" className={styles.webNavLogo} />
 
-      <ul className="nav-list">
-        <li>
+        <div className={styles.webNavLinkContainer}>
           <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About Us</a>
-        </li>
-        <li>
           <a href="#">Events</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
+          <a href="#">About Us</a>
+        </div>
 
-      <div onClick={toggleMenu} className="open-menu-cover">
-        <Image
-          src="/assets/icons/menu.svg"
-          alt=""
-          className="open-menu"
-          fill
-        />
+        <a href="#" className={styles.webNavContact}>
+          Contact Us
+        </a>
+
+        <Bars iconclass={styles.navBars} iconFucntion={toggleMenu} />
       </div>
 
-      {open && (
-        <div className="nav-list-mobile">
-          <div className="x-menu-cover">
-            <Image
-              src="/assets/icons/x.svg"
-              onClick={toggleMenu}
-              alt=""
-              className="x-menu"
-              fill
-            />
-          </div>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Events</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
+      {
+      showMenu && (
+      <div className={styles.mobileNav}>
+        <div className={styles.logoCancel}>
+          <Image
+            src={logo}
+            alt="Naps Nigeria"
+            className={styles.mobileNavLogo}
+          />
+          <Cancel iconclass={styles.navClose} iconFunction={toggleMenu} />
         </div>
-      )}
-    </nav>
+
+        <div className={styles.mobileNavContainer}>
+          <div className={styles.mobileNavLinkContainer}>
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About Us</a>
+          </div>
+
+          <a href="#" className={styles.mobileNavContact}>
+            Contact Us
+          </a>
+        </div>
+          </div>
+        )}
+    </>
   );
 }
 
