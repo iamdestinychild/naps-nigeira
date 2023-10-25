@@ -40,7 +40,7 @@ function Nav() {
         <div className={styles.logoCancel}>
           <Image
             src={logo}
-            alt="Naps Nigeria"
+            alt="National association of physics students Nigeria"
             className={styles.mobileNavLogo}
           />
           <Cancel iconclass={styles.navClose} iconFunction={toggleMenu} />
