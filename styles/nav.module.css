@@ -57,7 +57,7 @@
 }
 
 .mobileNavContact{
-    @apply bg-theme-neutral text-theme-90 font-medium text-base text-center my-5 w-[100%] py-1 rounded-[5px] 
+    @apply bg-theme-neutral text-theme-90 font-medium text-base text-center my-5 w-[100%] py-2 rounded-[5px] 
 }
 
 /* Mobile nav end */
