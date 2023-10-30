@@ -28,7 +28,7 @@
 }
 
 .navBars{
-    @apply text-theme-neutral w-6 h-6 sm:w-10 sm:h-10  lg:hidden
+    @apply text-theme-neutral w-6 h-6 lg:hidden
 }
 
 .logoCancel{
