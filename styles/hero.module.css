@@ -30,7 +30,7 @@
 }
 
 .heroNewsLetter > input{
-    @apply bg-transparent w-[80%] sm:w-[90%] lg:w-[95%] py-2 sm:py-3 px-3 text-sm sm:text-[1.2rem] lg:text-lg font-light font-inter placeholder:italic placeholder:text-theme-90 focus:outline-none 
+    @apply bg-transparent w-[80%] sm:w-[90%] lg:w-[95%] py-2 sm:py-3 px-3 text-sm  lg:text-lg font-light font-inter placeholder:italic placeholder:text-theme-90 focus:outline-none 
     rounded-l-full
 }
 
