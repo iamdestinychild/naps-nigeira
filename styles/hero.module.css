@@ -1,0 +1,39 @@
+
+.hero{
+    @apply relative h-[65vh] lg:h-screen 
+    /* bg-[url('/assets/images/theme.gif')]  */
+}
+
+.heroImage{
+    @apply absolute top-0 left-0 w-screen h-full -z-30
+}
+
+.container{
+    @apply absolute top-0 left-0 h-full w-full bg-theme-90 opacity-[0.8] -z-20
+}
+
+.heroContents{
+    @apply relative bg-transparent grid place-content-center h-full w-full z-20 px-1 lg:px-52
+     /* bg-green-500 */
+}
+
+.heroContents > h1{
+    @apply font-inter font-semibold text-[1.1rem] sm:text-[1.5rem] lg:text-6xl text-theme-10 text-center mb-8 lg:mb-16
+}
+
+.heroContents > p{
+    @apply font-inter font-light text-base sm:text-[1.2rem] lg:text-xl text-theme-10 text-center tracking-wider
+}
+
+.heroNewsLetter{
+    @apply relative mx-auto mt-5 px-5 w-[90%] lg:w-[50%] flex flex-row items-center justify-between bg-theme-10 rounded-full
+}
+
+.heroNewsLetter > input{
+    @apply bg-transparent w-[80%] sm:w-[90%] lg:w-[95%] py-2 sm:py-4 px-2 text-sm sm:text-[1.2rem] lg:text-lg font-light font-inter placeholder:italic placeholder:text-theme-90 focus:outline-none 
+    rounded-l-full
+}
+
+.heroArrow{
+    @apply w-8 h-8 lg:w-10 lg:h-10 p-2 text-sm lg:text-lg font-light font-inter text-theme-neutral bg-theme-90 rounded-full cursor-pointer
+}

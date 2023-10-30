@@ -1,10 +1,10 @@
 /* web nav start */
 .webNav{
-    @apply bg-theme-90 w-[100vw] flex font-inter items-center justify-between lg:px-20 xl:px-72 px-8  py-[12px]
+    @apply bg-theme-90 w-full flex font-inter items-center justify-between lg:px-20 xl:px-72 px-8  py-[12px]
 }
 
 .webNavLogo{
-    @apply lg:w-16 lg:h-16  w-10 h-10
+    @apply w-10 h-10 lg:w-16 lg:h-16  sm:w-12 sm:h-12
 }
 
 .webNavLinkContainer{
@@ -28,7 +28,7 @@
 }
 
 .navBars{
-    @apply text-theme-neutral w-6 h-6  lg:hidden
+    @apply text-theme-neutral w-6 h-6 sm:w-10 sm:h-10  lg:hidden
 }
 
 .logoCancel{
