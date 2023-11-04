@@ -45,42 +45,6 @@
   main{
     @apply relative
   }
-  
-  .about-section {
-    @apply py-10 px-5 
-    /* sm:412px fix starts */
-    leading-4
-    /* ends */
-    md:px-10
-    xl:py-[5rem]
-    xl:px-[12rem]
-  }
-
-  .about-section > h1 {
-    @apply text-2xl font-bold
-     text-theme-90 mb-3
-     font-mooli
-     /* sm:412 starts */
-     sm:text-3xl
-     /* ends */
-     xl:mb-5
-  }
-
-  .about-section > article {
-    @apply text-[15px] text-theme-90
-    mt-1 font-[400]
-    mb-3 font-moderat
-    leading-[25px]
-    /* sm:412px starts */
-    sm:text-[18px]
-    /* ends */;
-  }
-
-  .about-section > a {
-    @apply bg-theme-10 py-2 px-10
-    mx-auto text-theme-80
-    text-sm font-semibold;
-  }
 
   .news-section {
     @apply 

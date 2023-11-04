@@ -1,0 +1,24 @@
+
+.aboutComponent{
+    @apply flex flex-col lg:flex-row items-start  justify-between w-full py-16 lg:py-36  px-5 lg:px-20
+}
+
+.introVid{
+    @apply relative w-full lg:w-[40%]  h-auto lg:h-[18.4rem]
+}
+
+.vidIframe{
+    @apply relative w-full h-full rounded-lg
+}
+
+.aboutContent{
+    @apply  w-full lg:w-[50%] h-full  mt-10 lg:mt-0
+}
+
+.aboutContent > h1{
+    @apply text-[1.3rem] font-inter font-bold text-theme-90 mb-5
+}
+
+.aboutText{
+    @apply  w-full font-inter text-sm text-theme-90
+}

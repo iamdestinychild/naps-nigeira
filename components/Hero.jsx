@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "../styles/hero.module.css";
 import heroImage from "../public/assets/images/theme.gif";
+// import heroImage from "../public/assets/images/theme.gif";
 import ArrowRight from "@/icons/ArrowRight";
 import { useState } from "react";
 
