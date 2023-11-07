@@ -24,6 +24,8 @@ function Nav() {
         <div className={styles.webNavLinkContainer}>
           <a href="#">Home</a>
           <a href="#">Events</a>
+          <a href="#">Gallery</a>
+          <a href="#">Lectures</a>
           <a href="#">About Us</a>
         </div>
 

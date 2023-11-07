@@ -20,5 +20,6 @@
 }
 
 .aboutText{
-    @apply  w-full font-inter text-sm text-theme-90
+    @apply  w-full font-inter text-sm text-theme-90;
+    /* letterspacing: 10px; */
 }

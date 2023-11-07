@@ -1,0 +1,12 @@
+.latest{
+   @apply px-3 xl:py-20 xl:px-36 md:px-4
+}
+
+.latestTitle{
+    @apply text-center font-inter font-bold text-theme-90 text-3xl my-10
+}
+
+.container{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 
+    /* p-36 */
+}

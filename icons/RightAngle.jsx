@@ -1,4 +1,4 @@
-function ArrowRight({iconClass, iconFunction}) {
+function RightAngle({ iconClass, iconFunction }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,10 +12,10 @@ function ArrowRight({iconClass, iconFunction}) {
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+        d="M8.25 4.5l7.5 7.5-7.5 7.5"
       />
     </svg>
   );
 }
 
-export default ArrowRight;
+export default RightAngle;

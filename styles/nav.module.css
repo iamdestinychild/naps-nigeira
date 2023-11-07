@@ -1,6 +1,6 @@
 /* web nav start */
 .webNav{
-    @apply bg-theme-90 w-full flex font-inter items-center justify-between lg:px-20 xl:px-72 px-8  py-[12px]
+    @apply bg-theme-90 w-full flex font-inter items-center justify-between lg:px-20 xl:px-52 px-8  py-[12px]
 }
 
 .webNavLogo{
@@ -8,7 +8,7 @@
 }
 
 .webNavLinkContainer{
-    @apply w-[25%] lg:flex justify-between items-center hidden
+    @apply w-[45%] lg:flex justify-between items-center hidden
 }
 
 .webNavLinkContainer > a{
@@ -16,7 +16,9 @@
 }
 
 .webNavContact{
-    @apply bg-theme-neutral text-theme-90 font-inter font-medium text-base text-center px-7 py-1 rounded-[5px] hidden lg:inline-block
+    @apply 
+    /* bg-theme-10 */
+     text-theme-50 font-inter font-medium text-base text-center px-7 py-1 rounded-[5px] hidden lg:inline-block
 }
 
 /* web nav end */

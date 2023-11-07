@@ -1,9 +1,8 @@
 import Image from "next/image";
-import styles from "../styles/aboutcomponent.module.css";
-import aboutTheme from "../public/assets/images/theme3.gif";
-import Video from "../components/Video";
+import styles from "../styles/mission.module.css";
+import Video from "./Video";
 
-function About() {
+function Mission() {
   return (
     <div className={styles.aboutComponent}>
       <Video
@@ -37,4 +36,4 @@ function About() {
   );
 }
 
-export default About;
+export default Mission;

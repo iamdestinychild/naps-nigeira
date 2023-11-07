@@ -1,16 +1,14 @@
-import Image from "next/image";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import News from "@/components/News";
-import Events from "@/components/Events";
+import Mission from "@/components/Mission";
+import Latest from "@/components/Latest";
+
 
 export default function Home() {
   return (
     <main className="relative">
       <Hero />
-      <About />
-      <News />
-      <Events />
+      <Mission />
+      <Latest />
     </main>
   );
 }

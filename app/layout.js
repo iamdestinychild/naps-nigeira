@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='font-roboto'>
+      <body className='font-inter' suppressHydrationWarning={true}>
         <Nav />
         {children}
         <Footer />
