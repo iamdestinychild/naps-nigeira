@@ -1,6 +1,10 @@
 .card{
-    @apply w-full flex flex-col border-[1px] border-theme-10 pt-3 px-3
+    @apply w-full h-[32.4rem] flex flex-col border-[1px] border-theme-10 pt-3 px-3
     hover:scale-[1.05] transition-transform ease-linear duration-[0.45s] my-5 cursor-pointer
+}
+
+.cardImage{
+    @apply relative h-[50%] w-full
 }
 
 .cardTitle{

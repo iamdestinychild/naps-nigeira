@@ -26,7 +26,7 @@ function Hero() {
       <div className={styles.container}></div>
 
       <div className={styles.heroContents}>
-        <h1>National Association Of Physcis Students Nigeria</h1>
+        <h1>National Association Of Physics Students Nigeria</h1>
         <p>Join Our News Letter</p>
         <div className={styles.heroNewsLetter}>
           <input type="text" placeholder='example@email.com' />

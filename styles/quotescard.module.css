@@ -1,0 +1,24 @@
+.quotecard{
+    @apply flex flex-shrink-0 items-start justify-between bg-theme-10 w-full min-h-[12.5rem] p-[40px] rounded-md mx-3
+}
+
+.quoteImageContainer{
+    @apply relative w-16 h-16 rounded-[50%]
+}
+
+.quoteImage{
+    @apply relative w-full h-full rounded-[50%]
+}
+
+.quoteTextName{
+    @apply w-[85%] pr-10
+}
+
+.quotetext{
+    @apply text-theme-90 font-inter text-sm line-clamp-6
+}
+
+.quoteName{
+    @apply text-sm text-theme-90 font-inter font-bold mt-3
+}
+

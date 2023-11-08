@@ -1,5 +1,6 @@
 
-    [
+{
+    "cards": [
         {
             "id":1,
             "image":"/assets/images/img1.jpg",
@@ -42,4 +43,74 @@
             "text":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
             "datePosted":"1 November 2023"
         }
+    ],
+
+    "quotes": [
+        {
+            "id": 1,
+            "name":"Albert Einstein",
+            "image":"/assets/images/quotes/albert-einstein.jpg",
+            "quote":"The important thing is not to stop questioning. Curiosity has its own reason for existence. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
+        },
+        {
+            "id": 2,
+            "name":"Albert Einstein",
+            "image":"/assets/images/quotes/albert-einstein.jpg",
+            "quote":"Nothing happens until something moves."
+        },
+        {
+            "id": 3,
+            "name":"Richard P. Feynman",
+            "image":"/assets/images/quotes/richard-feynman.jpg",
+            "quote":"Physics isn't the most important thing. Love is."
+        },
+        {
+            "id": 4,
+            "name":"Werner Heisenberg",
+            "image":"/assets/images/quotes/werner-heisenberg.jpg",
+            "quote":"Not only is the Universe stranger than we think, it is stranger than we can think."
+        },
+        {
+            "id": 5,
+            "name":"Albert Einstein",
+            "image":"/assets/images/quotes/albert-einstein.jpg",
+            "quote":"No, this trick won't work... How on earth are you ever going to explain in terms of chemistry and physics so important a biological phenomenon as first love?"
+         },
+        {
+            "id": 6,
+            "name":"Michio Kaku",
+            "image":"/assets/images/quotes/michio-kaku.jpg",
+            "quote":"It is often stated that of all the theories proposed in this century, the silliest is quantum theory. In fact, some say that the only thing that quantum theory has going for it is that it is unquestionably correct."
+         },
+        {
+            "id": 7,
+            "name":"Niels Bohr",
+            "image":"/assets/images/quotes/niels-bohr.jpg",
+            "quote":"Those who are not shocked when they first come across quantum theory cannot possibly have understood it."
+        },
+        {
+            "id": 8,
+            "name":"Erwin Schrödinger",
+            "image":"/assets/images/quotes/erwin.jpg",
+            "quote":"Consciousness cannot be accounted for in physical terms. For consciousness is absolutely fundamental. It cannot be accounted for in terms of anything else."
+        },
+        {
+            "id": 9,
+            "name":"Nikola Tesla",
+            "image":"/assets/images/quotes/nikola-tesla.jpg",
+            "quote":"If you want to find the secrets of the universe, think in terms of energy, frequency and vibration."
+        },
+        {
+            "id": 10,
+            "name":"Nikola Tesla",
+            "image":"/assets/images/quotes/nikola-tesla.jpg",
+            "quote":"I don't care that they stole my idea . . I care that they don't have any of their own"
+         },
+        {
+            "id": 11,
+            "name":"Nikola Tesla",
+            "image":"/assets/images/quotes/nikola-tesla.jpg",
+            "quote":"The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence"
+        }
     ]
+}

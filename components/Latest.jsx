@@ -7,7 +7,7 @@ function Latest() {
     <div className={styles.latest}>
       <h1 className={styles.latestTitle}>Latest News</h1>
       <div className={styles.container}>
-        {data.map((d) => (
+        {data.cards.map((d) => (
           <LatestCard
             key={d.id}
             title={d.title}
